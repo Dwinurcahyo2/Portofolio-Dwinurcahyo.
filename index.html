@@ -250,7 +250,7 @@
                     <div class="rounded-xl shadow-lg p-8 mx-auto max-w-screen-xl lg:py-4 grid lg:grid-cols-2 gap-8 lg:gap-16">
                         <div>
                             <div class="w-full rounded-xl shadow-xs">
-                                <img src="\dist\img\portofolio\proyek1.png" alt="proyek1" class="w-full h-auto rounded-xl object-cover">
+                                <img src="/dist/img/portofolio/proyek1.png" alt="proyek1" class="w-full h-auto rounded-xl object-cover">
                             </div>
                         </div>
                         <div class="flex flex-col justify-center">
@@ -279,7 +279,7 @@
                         <div>
                             <div class="w-full bg-neutral-primary-soft rounded-base shadow-xs">
                                 <img
-                                    src="\dist\img\portofolio\proyek2.png"
+                                    src="/dist/img/portofolio/proyek2.png"
                                     alt="Contoh foto tim kerja"
                                     class="w-full h-auto rounded-xl object-cover"
                                 >
@@ -294,7 +294,7 @@
                         <div>
                             <div class="w-full bg-neutral-primary-soft rounded-base shadow-xs">
                                 <img
-                                src="\dist\img\portofolio\proyek3.png"
+                                src="/dist/img/portofolio/proyek3.png"
                                 alt="Contoh foto tim kerja"
                                 class="w-full h-auto rounded-xl object-cover"
                                 >
@@ -324,7 +324,7 @@
                         <div>
                             <div class="w-full bg-neutral-primary-soft rounded-base shadow-xs">
                                 <img
-                                    src="\dist\img\portofolio\proyek4.png"
+                                    src="/dist/img/portofolio/proyek4.png"
                                     alt="Contoh foto tim kerja"
                                     class="w-full h-auto rounded-xl object-cover"
                                 >
@@ -339,7 +339,7 @@
                         <div>
                             <div class="w-full bg-neutral-primary-soft rounded-base shadow-xs">
                                 <img
-                                src="\dist\img\portofolio\proyek5.png"
+                                src="/dist/img/portofolio/proyek5.png"
                                 alt="Contoh foto tim kerja"
                                 class="w-full h-auto rounded-xl object-cover"
                                 >
@@ -368,7 +368,7 @@
                         <div>
                             <div class="w-full bg-neutral-primary-soft rounded-base shadow-xs">
                                 <img
-                                    src="\dist\img\portofolio\proyek6.png"
+                                    src="/dist/img/portofolio/proyek6.png"
                                     alt="Contoh foto tim kerja"
                                     class="w-full h-auto rounded-xl object-cover"
                                 >
@@ -383,7 +383,7 @@
                         <div>
                             <div class="w-full bg-neutral-primary-soft rounded-base shadow-xs">
                                 <img
-                                src="\dist\img\portofolio\proyek7.png"
+                                src="/dist/img/portofolio/proyek7.png"
                                 alt="Contoh foto tim kerja"
                                 class="w-full h-auto rounded-xl object-cover"
                                 >
@@ -584,73 +584,64 @@
                 </button>
 
             </div>
+            <!-- MODAL -->
+            <div
+                id="certificate-modal"
+                class="fixed inset-0 z-[100] hidden items-center justify-center bg-black/70 p-4"
+            >
 
-
-<!-- MODAL -->
-<div
-    id="certificate-modal"
-    class="fixed inset-0 z-[100] hidden items-center justify-center bg-black/70 p-4"
->
-
-    <div
-        id="certificate-modal-content"
-        class="relative max-h-[95vh] w-full max-w-5xl overflow-hidden rounded-2xl bg-white shadow-2xl"
-    >
-
-        <!-- Header -->
-        <div class="flex items-center justify-between border-b border-gray-200 bg-white px-5 py-4">
-
-            <div>
-                <h2
-                    id="certificate-title"
-                    class="text-lg font-semibold text-gray-900"
+                <div
+                    id="certificate-modal-content"
+                    class="relative max-h-[95vh] w-full max-w-5xl overflow-hidden rounded-2xl bg-white shadow-2xl"
                 >
-                    Sertifikat
-                </h2>
 
-                <p class="text-sm text-gray-500">
-                    Detail sertifikat
-                </p>
+                    <!-- Header -->
+                    <div class="flex items-center justify-between border-b border-gray-200 bg-white px-5 py-4">
+
+                        <div>
+                            <h2
+                                id="certificate-title"
+                                class="text-lg font-semibold text-gray-900"
+                            >
+                                Sertifikat
+                            </h2>
+
+                            <p class="text-sm text-gray-500">
+                                Detail sertifikat
+                            </p>
+                        </div>
+
+                        <button
+                            type="button"
+                            id="certificate-close"
+                            class="rounded-lg p-2 text-gray-400 hover:bg-gray-100 hover:text-gray-700"
+                        >
+                            <svg
+                                class="h-5 w-5"
+                                fill="none"
+                                viewBox="0 0 24 24"
+                                stroke="currentColor"
+                            >
+                                <path
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    stroke-width="2"
+                                    d="M6 6l12 12M18 6L6 18"
+                                />
+                            </svg>
+                        </button>
+                    </div>
+                    <!-- Image -->
+                    <div class="flex max-h-[calc(95vh-80px)] items-center justify-center overflow-auto bg-gray-100 p-6">
+                        <img
+                            id="certificate-modal-image"
+                            src=""
+                            alt=""
+                            class="max-h-[75vh] max-w-full rounded-lg object-contain shadow-lg"
+                        >
+                    </div>
+                </div>
             </div>
-
-            <button
-                type="button"
-                id="certificate-close"
-                class="rounded-lg p-2 text-gray-400 hover:bg-gray-100 hover:text-gray-700"
-            >
-                <svg
-                    class="h-5 w-5"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke="currentColor"
-                >
-                    <path
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        stroke-width="2"
-                        d="M6 6l12 12M18 6L6 18"
-                    />
-                </svg>
-            </button>
-
-        </div>
-
-
-        <!-- Image -->
-        <div class="flex max-h-[calc(95vh-80px)] items-center justify-center overflow-auto bg-gray-100 p-6">
-
-            <img
-                id="certificate-modal-image"
-                src=""
-                alt=""
-                class="max-h-[75vh] max-w-full rounded-lg object-contain shadow-lg"
-            >
-
-        </div>
-
-    </div>
-
-</div>
         </section>
 
 
@@ -1033,7 +1024,7 @@
                         class="relative mx-6 mt-5 h-80 overflow-hidden rounded-2xl bg-slate-900">
 
                         <!-- Background -->
-                        <div class="absolute inset-0 bg-gradient-to-b from-slate-800 to-slate-950"></div>
+                        <div class="absolute inset-0 bg-gradient-to-black from-slate-800 to-slate-950"></div>
 
                         <!-- Court -->
                         <div class="absolute bottom-0 left-0 right-0 h-24 border-t border-white/10 bg-slate-800/80">
