@@ -374,3 +374,36 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 
 });
+
+// ========================================
+// Hide sertifikat
+// ========================================
+
+document.addEventListener('DOMContentLoaded', function () {
+    const toggleButton = document.getElementById('toggle-certificates');
+    const icon = document.getElementById('certificate-icon');
+    const extraCertificates = document.querySelectorAll('.extra-certificate');
+
+    if (!toggleButton || extraCertificates.length === 0) {
+        if (toggleButton) {
+            toggleButton.classList.add('hidden');
+        }
+        return;
+    }
+
+    let isExpanded = false;
+
+    toggleButton.addEventListener('click', function () {
+        isExpanded = !isExpanded;
+
+        extraCertificates.forEach(function (certificate) {
+            certificate.classList.toggle('hidden', !isExpanded);
+        });
+
+        toggleButton.childNodes[0].textContent = isExpanded
+            ? 'Sembunyikan Sertifikat '
+            : 'Sertifikat Lainnya ';
+
+        icon.textContent = isExpanded ? '↑' : '↓';
+    });
+});
